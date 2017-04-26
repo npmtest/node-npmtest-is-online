@@ -1,6 +1,6 @@
 # npmtest-is-online
 
-#### basic test coverage for  is-online (v7.0.0)  [![npm package](https://img.shields.io/npm/v/npmtest-is-online.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-is-online) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-is-online.svg)](https://travis-ci.org/npmtest/node-npmtest-is-online)
+#### basic test coverage for  [is-online (v7.0.0)](https://github.com/sindresorhus/is-online#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-is-online.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-is-online) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-is-online.svg)](https://travis-ci.org/npmtest/node-npmtest-is-online)
 
 #### Check if the internet connection is up
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-is-online/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-is-online/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-is-online/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-is-online/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-is-online/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-is-online/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-is-online/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-is-online/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-is-online/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-is-online/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-is-online/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-is-online/build/coverage.html/index.html)
 
@@ -35,29 +35,46 @@
 ```json
 
 {
-    "name": "is-online",
-    "version": "7.0.0",
-    "description": "Check if the internet connection is up",
-    "license": "MIT",
-    "repository": "sindresorhus/is-online",
     "author": {
         "name": "Sindre Sorhus",
         "url": "sindresorhus.com"
     },
+    "browser": "browser.js",
+    "bugs": {
+        "url": "https://github.com/sindresorhus/is-online/issues"
+    },
     "contributors": [
-        "silverwind <me@silverwind.io> (github.com/silverwind)"
+        {
+            "name": "silverwind",
+            "url": "github.com/silverwind"
+        }
     ],
+    "dependencies": {
+        "got": "^6.7.1",
+        "p-any": "^1.0.0",
+        "p-timeout": "^1.0.0",
+        "public-ip": "^2.3.0"
+    },
+    "description": "Check if the internet connection is up",
+    "devDependencies": {
+        "ava": "*",
+        "xo": "*"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "7e2408c0ae1e7e37ba8d50bdb237260d32bfd96e",
+        "tarball": "https://registry.npmjs.org/is-online/-/is-online-7.0.0.tgz"
+    },
     "engines": {
         "node": ">=4"
-    },
-    "scripts": {
-        "test": "xo && ava test.js"
     },
     "files": [
         "index.js",
         "browser.js",
         "hostnames.js"
     ],
+    "gitHead": "8b092e0d9c6b02b3f743e4c8ba5eca40f0b12396",
+    "homepage": "https://github.com/sindresorhus/is-online#readme",
     "keywords": [
         "browser",
         "online",
@@ -78,20 +95,29 @@
         "reachability",
         "accessible"
     ],
-    "dependencies": {
-        "got": "^6.7.1",
-        "p-any": "^1.0.0",
-        "p-timeout": "^1.0.0",
-        "public-ip": "^2.3.0"
+    "license": "MIT",
+    "maintainers": [
+        {
+            "name": "sindresorhus"
+        },
+        {
+            "name": "silverwind"
+        }
+    ],
+    "name": "is-online",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sindresorhus/is-online.git"
     },
-    "devDependencies": {
-        "ava": "*",
-        "xo": "*"
+    "scripts": {
+        "test": "xo && ava test.js"
     },
-    "browser": "browser.js",
+    "version": "7.0.0",
     "xo": {
         "esnext": true
-    }
+    },
+    "bin": {}
 }
 ```
 
